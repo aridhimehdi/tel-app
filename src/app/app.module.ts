@@ -8,11 +8,13 @@ import { MainComponent } from './pages/main/main.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './pages/main/header/header.component';
 import { NavBarComponent } from './pages/main/nav-bar/nav-bar.component';
-import { AddFactureComponent } from './views/add-facture/add-facture.component';
+
 import { FooterComponent } from './pages/main/footer/footer.component';
+import { AddSimComponent } from './views/add-sim/add-sim.component';
+import { ArchiveComponent } from './views/archive/archive.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, MainComponent, HeaderComponent, NavBarComponent, AddFactureComponent, FooterComponent],
+  declarations: [AppComponent, LoginComponent, MainComponent, HeaderComponent, NavBarComponent, FooterComponent, AddSimComponent, ArchiveComponent],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],

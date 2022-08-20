@@ -4,7 +4,9 @@ import { LoginComponent } from './pages/login/login.component';
 import { MainComponent } from './pages/main/main.component';
 import { AuthGuard } from './utils/guards/auth.guard';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AddFactureComponent } from './views/add-facture/add-facture.component';
+import { AddSimComponent } from './views/add-sim/add-sim.component';
+import { ArchiveComponent } from './views/archive/archive.component';
+
 
 const routes: Routes = [
   {
@@ -15,13 +17,17 @@ const routes: Routes = [
     path: '',
     component: MainComponent,
     canActivate: [AuthGuard],
-
-    children: [
+    children:[
       {
-        path: 'addfacture',
-        component: AddFactureComponent,
+        path:"addsim",
+        component:AddSimComponent
       },
-    ],
+      {
+        path:"archive",
+        component:ArchiveComponent
+      }
+    ]
+    
   },
   { path: '**', redirectTo: '' },
 ];

@@ -1,0 +1,47 @@
+.mainAddSim{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #9017b9;
+    border-radius: 8px;
+}
+
+
+table{
+    
+    padding: 8px;
+}
+
+td{
+    border-bottom: 1px solid #9017b9;
+}
+
+.BtnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+  }
+
+
+  .submitBtn {
+    border: 2px solid #9017b9;
+    background: none;
+    color: #9017b9;
+    margin-top: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+    width: 80px;
+  }
+  
+  .submitBtn:hover {
+    background-color: #9017b9;
+    color: white;
+    transition: 0.25s;
+  }
+  
+  .submitBtn:active {
+    background-color: #949494;
+    transition: 0.25s;
+  }
+  
