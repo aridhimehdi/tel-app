@@ -1,0 +1,66 @@
+
+<div *ngIf="status == true" class="SimBody">
+    <table>
+        <tr>
+            <th colspan="2">TUNISIE TELECOM</th>
+          </tr>
+        <tr>
+            <td>Matricule:</td>
+            <td>{{sim.matricule}}</td>
+        </tr>
+        <tr>
+            <td>Cin:</td>
+            <td>{{sim.cin}}</td>
+        </tr>
+        <tr>
+            <td>Mon et Prénom:</td>
+            <td>{{sim.fullName}} </td>
+        </tr>
+        <tr>
+            <td>Téléphone:</td>
+            <td>{{sim.tel}}</td>
+        </tr>
+        <tr>
+            <td>Addresse:</td>
+            <td>{{sim.address}}</td>
+        </tr>
+        
+    </table>
+    <div class="btnDiv">
+        <button (click)="changeStatus() " class="submitBtn">modifier</button>
+        <button (click)="deleteRecored()" class="submitBtn">supprimer</button>
+    </div>
+</div>
+
+<div *ngIf="status == false" class="SimBodyRed">
+    <table>
+        <tr>
+            <th colspan="2">TUNISIE TELECOM</th>
+          </tr>
+        <tr>
+            <td>Matricule:</td>
+            <td><input #matricule type="text" [value]="sim.matricule" /></td>
+        </tr>
+        <tr>
+            <td>Cin:</td>
+            <td><input #cin type="text" [value]="sim.cin" /></td>
+        </tr>
+        <tr>
+            <td>Mon et Prénom:</td>
+           <td> <input #fullName type="text" [value]="sim.fullName" ></td>
+        </tr>
+        <tr>
+            <td>Téléphone:</td>
+            <td><input #tel type="text" [value]="sim.tel" /></td>
+        </tr>
+        <tr>
+            <td>Addresse:</td>
+            <td><input #address type="text" [value]="sim.address" /></td>
+        </tr>
+        
+    </table>
+    <div class="btnDiv">
+        <button (click)="changeStatus() " class="submitBtn">restore</button>
+        <button (click)="updateRecord(matricule.value,cin.value,fullName.value,tel.value,address.value)" class="submitBtn">save</button>
+    </div>
+</div>

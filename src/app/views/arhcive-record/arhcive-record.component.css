@@ -1,0 +1,72 @@
+.SimBody{
+    border: 2px solid #9017b9;
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+   
+}
+
+.SimBodyRed{
+    border: 2px solid red;
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+   
+}
+
+table{
+    width: 250px;
+    border-top: 1px solid #9017b9;
+    
+}
+td{
+    border-bottom:1px solid #9017b9;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+
+th{
+    border-bottom:1px solid #9017b9;
+}
+.btnDiv{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    padding-bottom: 3px;
+    width: 100%;
+    border-bottom: 1px solid #9017b9;
+}
+
+.submitBtn {
+    border: 2px solid #9017b9;
+    background: none;
+    color: #9017b9;
+    margin-top: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+    width: 80px;
+  }
+  
+  .submitBtn:hover {
+    background-color: #9017b9;
+    color: white;
+    transition: 0.25s;
+  }
+  
+  .submitBtn:active {
+    background-color: #e9e9e9;
+    transition: 0.25s;
+  }
+  
